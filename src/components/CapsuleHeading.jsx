@@ -4,7 +4,7 @@ export const CapsuleHeading = ({text}) => {
   return (
 <>
 
-<div className="uppercase bg-[#f7f7f7] border-[2px] border-[#e8e8e8] rounded-[28px] h-[40px] px-[16px] py-[8px] mb-[16px] Inter300 text-[14px]">
+<div className=" w-auto inline-flex uppercase bg-[#f7f7f7] border-[2px] border-[#e8e8e8] rounded-[28px] h-[40px] px-[16px] py-[8px] mb-[16px] Inter400 text-[12px] md:text-[14px] text-[#333]">
     {text}
 </div>
 
