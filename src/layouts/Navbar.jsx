@@ -27,7 +27,6 @@ export const Navbar = () => {
         </div>
         <div className="h-full hidden lg:flex justify-center items-center">
           <a href="/explore">
-
           <PrimaryBlackBtn text="Explore all" />
           </a>
         </div>
