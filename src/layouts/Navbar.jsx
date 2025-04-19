@@ -33,7 +33,7 @@ export const Navbar = () => {
         <div className="navFarRight flex lg:hidden gap-[20px]">
           <button>Cart</button>
           <button onClick={HandleMenuIcon}>
-            <PrimaryBlackBtn text={<i class="ri-menu-line Inter900"></i>} />
+            <PrimaryBlackBtn text={<i className="ri-menu-line Inter900"></i>} />
           </button>
         </div>
       </nav>
