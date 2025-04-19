@@ -9,19 +9,11 @@ export const Navbar = () => {
   const [NavMenu, setNavMenu] = useState(false);
   function HandleMenuIcon() {
     setNavMenu(!NavMenu);
-    // if(NavMenu){
-    //   MenuNavDrop.current.classList.add("flex")
-    //   MenuNavDrop.current.classList.remove("hidden")
-    // }else{
-    //   MenuNavDrop.current.classList.add("hidden")
-    //   MenuNavDrop.current.classList.remove("flex")
-    // }
-    // MenuNavDrop.current.classList.add(`${NavMenu ? "flex" : "hidden"}`);
-    // MenuNavDrop.current.classList.remove(`${!NavMenu ? "flex" : "hidden"}`);
+
   }
   return (
     <>
-      <nav className="w-full h-[88px] flex justify-between items-center text-[#0C0407]  px-[5vw] lg:px-[5vw] xl:px-[10vw]">
+      <nav className="w-full  h-[88px] flex justify-between items-center text-[#0C0407]  px-[5vw] lg:px-[5vw] xl:px-[16vw]">
         <div className="w-auto h-full flex justify-center items-center">
           <img src={Icon} alt="" />
         </div>
@@ -30,11 +22,14 @@ export const Navbar = () => {
           <Link to="/about">About Us</Link>
           <Link to="/agents">Agents</Link>
           <Link to="/blog">Blog</Link>
-          <Link to="/test">Test</Link>
+          {/* <Link to="/test">Test</Link> */}
           <button>Cart</button>
         </div>
         <div className="h-full hidden lg:flex justify-center items-center">
+          <a href="/explore">
+
           <PrimaryBlackBtn text="Explore all" />
+          </a>
         </div>
         <div className="navFarRight flex lg:hidden gap-[20px]">
           <button>Cart</button>

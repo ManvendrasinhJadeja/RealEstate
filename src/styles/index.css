@@ -1,26 +1,32 @@
 @import "tailwindcss";
+
 @font-face {
   font-family: Inter;
   src: url(../assets/Inter/Inter-VariableFont-wght.ttf);
 }
+
 * {
   font-family: Inter;
   font-weight: 500;
 }
+
+
 .Inter100 {
   font-weight: 100;
 }
+
 .Inter200 {
   font-weight: 200;
 }
-.Inter400 {
-  font-weight: 400;
+
+.Inter500 {
+  font-weight: 500;
 }
 .Inter300 {
   font-weight: 300;
 }
-.Inter500 {
-  font-weight: 500;
+.Inter400 {
+  font-weight: 400;
 }
 .Inter600 {
   font-weight: 600;
@@ -34,3 +40,4 @@
 .Inter900 {
   font-weight: 900;
 }
+
