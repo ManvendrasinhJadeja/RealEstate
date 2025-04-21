@@ -1,15 +1,12 @@
 @import "tailwindcss";
-
 @font-face {
   font-family: Inter;
   src: url(../assets/Inter/Inter-VariableFont-wght.ttf);
 }
-
 * {
   font-family: Inter;
   font-weight: 500;
 }
-
 
 .Inter100 {
   font-weight: 100;

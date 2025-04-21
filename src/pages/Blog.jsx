@@ -37,7 +37,7 @@ export const Blog = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full h-screen flex flex-col  px-[5vw] lg:px-[5vw] xl:px-[16vw]">
+      <div className="w-full min-h-screen flex flex-col  px-[5vw] lg:px-[5vw] xl:px-[16vw]">
         <HeroPrimaryHeading text1={"all articles"} text2={"blogs"} />
         <div
           className="grid auto-rows-auto auto-cols-fr 
