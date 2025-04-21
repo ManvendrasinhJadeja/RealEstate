@@ -16,6 +16,9 @@ import b13 from "../assets/Blog/B13.jpg";
 import { Navbar } from "../layouts/Navbar";
 import BlogCard from "../components/BlogCard";
 
+import { Accordian } from "../layouts/Accordian";
+import { Footer } from "../layouts/Footer";
+
 const blogData = [
   { image: b2, readTime: "14 min read" },
   { image: b3, readTime: "20 min read" },
@@ -49,6 +52,8 @@ export const Blog = () => {
           ))}
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };

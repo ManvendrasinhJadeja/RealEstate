@@ -16,6 +16,9 @@ import { HeroPrimaryHeading } from "../layouts/HeroPrimaryHeading";
 import { Navbar } from "../layouts/Navbar";
 import { PrimaryBlackBtn } from "../components/PrimaryBlackBtn";
 
+import { Accordian } from "../layouts/Accordian";
+import { Footer } from "../layouts/Footer";
+
 const properties = [
   {
     image: E3,
@@ -167,7 +170,7 @@ export const Explore = () => {
   return (
     <>
       <Navbar />
-      <div className="w-full h-screen flex flex-col px-[5vw] lg:px-[5vw] xl:px-[16vw] items-center">
+      <div className="w-full min-h-screen flex flex-col px-[5vw] lg:px-[5vw] xl:px-[16vw] items-center">
         <HeroPrimaryHeading text1={"all propertie"} text2={"properties"} />
         <div
           className="grid auto-rows-auto auto-cols-fr 
@@ -185,6 +188,12 @@ export const Explore = () => {
           <PrimaryBlackBtn text={"Explore all"} />
         </span>
       </div>
+
+
+        <div className="w-full h-auto flex flex-col  px-[5vw] lg:px-[5vw] xl:px-[16vw]">
+          <Accordian/>
+          </div>
+      <Footer />
     </>
   );
 };

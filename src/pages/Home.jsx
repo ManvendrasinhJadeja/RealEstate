@@ -9,16 +9,14 @@ import E5 from "../assets/Explore/E05.jpg";
 import E6 from "../assets/Explore/E06.jpg";
 import E7 from "../assets/Explore/E07.jpg";
 import E8 from "../assets/Explore/E08.jpg";
-import E9 from "../assets/Explore/E09.jpg";
-import E10 from "../assets/Explore/E10.jpg";
-import E11 from "../assets/Explore/E11.jpg";
-import E12 from "../assets/Explore/E12.jpg";
-import E13 from "../assets/Explore/E13.jpg";
-import E14 from "../assets/Explore/E14.jpg";
 import PropertyCard from "../components/PropertyCard";
 import { PrimaryBlackBtn } from "../components/PrimaryBlackBtn";
 import { TextImageSection } from "../layouts/TextImageSection";
-import splitImg1 from '../assets/Home/H09.jpg'
+import splitImg1 from "../assets/Home/H09.jpg";
+import { Footer } from "../layouts/Footer";
+import { Accordian } from "../layouts/Accordian";
+import { SecondoryHeadingText } from "../components/SecondoryHeadingText";
+
 const properties = [
   {
     image: E3,
@@ -103,7 +101,7 @@ export const Home = () => {
           text2={"Real-estate"}
         />
       </div>
-      <div className="mt-[-100px] lg:mb-[150px]">
+      <div className="lg:mb-[150px]">
         <img
           src={HeroImg}
           alt=""
@@ -127,16 +125,49 @@ export const Home = () => {
             <PropertyCard key={index} {...item} />
           ))}
         </div>
-<span className="my-5">
-
-        <PrimaryBlackBtn text={"Explore all"}  />
-</span>
+        <span className="my-5">
+          <PrimaryBlackBtn text={"Explore all"} />
+        </span>
       </div>
 
-      <div className="w-full  max-h-[400px] pt-[100px] px-[5vw] lg:px-[5vw] xl:px-[16vw] flex justify-between">
-          <TextImageSection text1={"about us"} text2={"The ideal way to find your dream home"} text3={"Wake up to the sound of waves and the smell of salt air in one of our stunning coastal homes. Perfect for those seeking a serene escape, these properties offer unmatched ocean views and direct beach safe neighborhoods, and nearby schools access."} text4={"Read more"} imgSrc={splitImg1}/>
+      <div className="w-full  pt-[100px] px-[5vw] lg:px-[5vw] xl:px-[16vw] ">
+        <TextImageSection
+          text1={"about us"}
+          text2={"The ideal way to find your dream home"}
+          text3={
+            "Wake up to the sound of waves and the smell of salt air in one of our stunning coastal homes. Perfect for those seeking a serene escape, these properties offer unmatched ocean views and direct beach safe neighborhoods, and nearby schools access."
+          }
+          text4={"Read more"}
+          imgSrc={splitImg1}
+          flexType={"flex-row"}
+        />
+
+
       </div>
 
+      <div className="w-full  pt-[100px] px-[5vw] lg:px-[5vw] xl:px-[16vw] ">
+        <TextImageSection
+          text1={"about us"}
+          text2={"The ideal way to find your dream home"}
+          text3={
+            "Wake up to the sound of waves and the smell of salt air in one of our stunning coastal homes. Perfect for those seeking a serene escape, these properties offer unmatched ocean views and direct beach safe neighborhoods, and nearby schools access."
+          }
+          text4={"Read more"}
+          imgSrc={splitImg1}
+          flexType={'flex-row-reverse '}
+
+        />
+      </div>
+
+
+  <div className="w-full h-auto flex flex-col  px-[5vw] lg:px-[5vw] xl:px-[16vw]">
+    <SecondoryHeadings text1={"Property Categories"} text2={"Start your journey to your ideal property"}/>
+  </div>
+
+  <div className="w-full h-auto flex flex-col  px-[5vw] lg:px-[5vw] xl:px-[16vw]">
+          <Accordian/>
+          </div>
+      <Footer />
     </>
   );
 };
