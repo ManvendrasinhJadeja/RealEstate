@@ -31,14 +31,14 @@ const PropertyCard = ({
       </div>
 
       {/* Content Section */}
-      <div className="p-4 space-y-2">
-        <h3 className="text-lg font-semibold">{title}</h3>
-        <p className="text-sm text-gray-500 flex items-center gap-1">
+      <div className="p-0 space-y-2">
+        <h3 className="text-[20px] md:text-[22px] lg:text-[24px] font-bold text-black  Inter400">{title}</h3>
+        <p className="text-sm text-black flex items-center gap-1">
           <MdLocationOn className="text-lg" />
           {location}
         </p>
 
-        <div className="flex flex-wrap gap-2 text-sm text-gray-600 mt-3">
+        <div className="flex flex-wrap gap-2 text-sm text-black mt-3">
           <div className="flex items-center gap-1 px-2 py-1 bg-gray-100 rounded-full">
             <PiSquaresFourBold />
             {area} sqft

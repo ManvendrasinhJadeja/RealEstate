@@ -3,7 +3,7 @@ import React from 'react'
 export const SecondoryHeadingText = ({text}) => {
   return (
 <>
-<h2 className="text-[30px] md:text-[40px] lg:text-[48px] text-[#000000] inter600 text-center leading-[112%]">
+<h2 className="text-[30px] md:text-[40px] lg:text-[48px] text-[#000000] Inter600 text-center  leading-[112%]">
     {text}
 </h2>
 </>

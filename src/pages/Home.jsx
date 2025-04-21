@@ -1,20 +1,142 @@
 import React from "react";
 import { Navbar } from "../layouts/Navbar";
-
+import HeroImg from "../assets/Home/H02.png";
 import { HeroPrimaryHeading } from "../layouts/HeroPrimaryHeading";
-
+import { SecondoryHeadings } from "../layouts/SecondoryHeadings";
+import E3 from "../assets/Explore/E03.jpg";
+import E4 from "../assets/Explore/E04.jpg";
+import E5 from "../assets/Explore/E05.jpg";
+import E6 from "../assets/Explore/E06.jpg";
+import E7 from "../assets/Explore/E07.jpg";
+import E8 from "../assets/Explore/E08.jpg";
+import E9 from "../assets/Explore/E09.jpg";
+import E10 from "../assets/Explore/E10.jpg";
+import E11 from "../assets/Explore/E11.jpg";
+import E12 from "../assets/Explore/E12.jpg";
+import E13 from "../assets/Explore/E13.jpg";
+import E14 from "../assets/Explore/E14.jpg";
+import PropertyCard from "../components/PropertyCard";
+import { PrimaryBlackBtn } from "../components/PrimaryBlackBtn";
+import { TextImageSection } from "../layouts/TextImageSection";
+import splitImg1 from '../assets/Home/H09.jpg'
+const properties = [
+  {
+    image: E3,
+    type: "Rent",
+    price: "400",
+    priceUnit: "/ month",
+    title: "Sunset luxury villa",
+    location: "12273 Dream Avenue, New York",
+    area: 1490,
+    beds: 3,
+    baths: 2,
+    garages: 2,
+  },
+  {
+    image: E4,
+    type: "Sell",
+    price: "50,000",
+    priceUnit: "",
+    title: "Parkview estates",
+    location: "2972 Westheimer Rd. Santa Ana, Illinois",
+    area: 2370,
+    beds: 4,
+    baths: 3,
+    garages: 2,
+  },
+  {
+    image: E5,
+    type: "Rent",
+    price: "200",
+    priceUnit: "/ month",
+    title: "Cedar grove residences",
+    location: "8502 Preston Rd. Inglewood, Maine",
+    area: 1300,
+    beds: 3,
+    baths: 1,
+    garages: 1,
+  },
+  {
+    image: E6,
+    type: "Sell",
+    price: "32,000",
+    priceUnit: "",
+    title: "Lakeside manor",
+    location: "2464 Royal Ln. Mesa, New Jersey",
+    area: 700,
+    beds: 2,
+    baths: 1,
+    garages: 1,
+  },
+  {
+    image: E7,
+    type: "Rent",
+    price: "520",
+    priceUnit: "/ month",
+    title: "Oceanfront oasis",
+    location: "6391 Elgin St. Celina, Delaware",
+    area: 1500,
+    beds: 3,
+    baths: 2,
+    garages: 3,
+  },
+  {
+    image: E8,
+    type: "Rent",
+    price: "360",
+    priceUnit: "/ month",
+    title: "Skyline tower",
+    location: "2715 Ash Dr. San Jose, South Dakota",
+    area: 1250,
+    beds: 3,
+    baths: 2,
+    garages: 1,
+  },
+];
 export const Home = () => {
   return (
     <>
-
-        <Navbar />
-        <div className="w-full h-screen flex flex-col py-[100px]">
-          <HeroPrimaryHeading
-            text1={"buy & sell your dream"}
-            text2={"Real-estate"}
-          />
-
+      <Navbar />
+      <div className="w-full h-auto flex flex-col  px-[5vw] lg:px-[5vw] xl:px-[16vw]">
+        <HeroPrimaryHeading
+          text1={"buy & sell your dream"}
+          text2={"Real-estate"}
+        />
       </div>
+      <div className="mt-[-100px] lg:mb-[150px]">
+        <img
+          src={HeroImg}
+          alt=""
+          className="w-full object-cover px-[5vw] lg:px-[5vw] xl:px-[8vw]"
+        />
+      </div>
+      <div className="w-full  pt-[100px] px-[5vw] lg:px-[5vw] xl:px-[16vw] flex flex-col justify-center items-center gap-6">
+        <SecondoryHeadings
+          text1={"Recent properties"}
+          text2={"Featured properties"}
+        />
+        <div
+          className="grid auto-rows-auto auto-cols-fr 
+                gap-[41px] 
+                md:gap-[40px] 
+                grid-cols-1 
+                md:grid-cols-2 
+                lg:grid-cols-3"
+        >
+          {properties.map((item, index) => (
+            <PropertyCard key={index} {...item} />
+          ))}
+        </div>
+<span className="my-5">
+
+        <PrimaryBlackBtn text={"Explore all"}  />
+</span>
+      </div>
+
+      <div className="w-full  max-h-[400px] pt-[100px] px-[5vw] lg:px-[5vw] xl:px-[16vw] flex justify-between">
+          <TextImageSection text1={"about us"} text2={"The ideal way to find your dream home"} text3={"Wake up to the sound of waves and the smell of salt air in one of our stunning coastal homes. Perfect for those seeking a serene escape, these properties offer unmatched ocean views and direct beach safe neighborhoods, and nearby schools access."} text4={"Read more"} imgSrc={splitImg1}/>
+      </div>
+
     </>
   );
 };
